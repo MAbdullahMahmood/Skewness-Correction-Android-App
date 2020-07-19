@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/label"
+        android:layout_alignParentTop="true"
+        android:textStyle="bold"
+        android:textSize="30sp"
+        android:padding="5dp"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:text="Skewness Detection"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:gravity="center"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="20dp"
+            android:text="Previous"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_below="@+id/label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:background="@android:color/transparent"
+            android:visibility="gone"
+            android:layout_weight="1"
+            android:id="@+id/imagebefore"
+            android:layout_width="match_parent"
+            android:layout_height="250dp" />
+    </LinearLayout>
+    <TextView
+        android:gravity="center"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:text="Afterward"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <ImageView
+            android:background="@android:color/transparent"
+            android:visibility="gone"
+            android:layout_weight="1"
+            android:id="@+id/image"
+            android:layout_width="match_parent"
+            android:layout_height="250dp" />
+
+    </LinearLayout>
+
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_gravity="center_horizontal"
+    android:gravity="center_horizontal">
+
+    <Button
+        android:id="@+id/btn_deskew"
+        android:textColor="@android:color/white"
+        android:background="@android:color/holo_red_light"
+        android:layout_margin="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:text="Deskew" />
+    <Button
+        android:id="@+id/btn_load_img"
+        android:textColor="@android:color/white"
+        android:background="@android:color/holo_red_light"
+        android:layout_margin="20dp"
+        android:padding="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:text="Loead Image" />
+</LinearLayout>
+
+</LinearLayout>
